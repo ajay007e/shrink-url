@@ -1,0 +1,126 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 title">
+      <h5>Welcome to</h5>
+      <h1 class="brand">Shrink Url</h1>
+      <div class="feature">
+        <h5 class="text-200">Create an account to enjoy :</h5>
+        <div>
+          <ul>
+            <li><h5 class="text-200">Easy Link Shortening</h5></li>
+            <li><h5 class="text-200">Full Link History</h5></li>
+            <li><h5 class="text-200">Customized Shrink Url</h5></li>
+          </ul>
+        </div>
+        <a href="" class="mt-4 btn btn-outline-dark disabled">Create an account</a>
+      </div>
+    </div>
+    <div class="col-md-8 col-lg-6 data">
+      <div class="card">
+        <form class="p-4" id="form">
+          <div class="card-heading">
+            <h5 class="text-400">Enter a long URL to make a Shrink Url</h5>
+          </div>
+          <input
+            class="my-2 w-100 urlLong"
+            type="text"
+            name="urlLong"
+            id=""
+            autocomplete="off"
+          />
+          <p class="error-message err-u hidden"></p>
+
+          <div class="card-text">
+            <h5 class="text-400">Customize your link</h5>
+          </div>
+          <div class="my-2">
+            <select name="domain" class="domain w-100" id="">
+              <option value="shrinkUrl.com">shrinkUrl.com</option>
+              <option value="shrinkMe.com">shrinkMe.com</option>
+            </select>
+            <input type="text" class="alias w-100 mt-2" placeholder="Alias" />
+          </div>
+          <p class="error-message err-a hidden"></p>
+
+          <button
+            class="btn btn-outline-primary btn-lg btn-block"
+            type="submit"
+            id="form-btn"
+          >
+            <span id="btn-load">Shrink Now</span></button>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-8 col-lg-6 result hidden">
+      <div class="card">
+        <div class="p-4">
+          <div class="card-heading">
+            <h5 class="text-400">Your Long Url</h5>
+
+          </div>
+          <input
+            readonly
+            class="my-2 w-100"
+            type="text"
+            name="urlLong"
+            id="urlLong"
+          />
+          <div class="card-text">
+            <h5 class="text-400">Shrink Url</h5>
+          </div>
+          <div class="my-2">
+            <input readonly type="text" class="alias w-100" id="alias" />
+          </div>
+          <div class="options mb-3">
+            <a class="btn btn-outline-dark col-3 visit" href=""><i
+                class="fas fa-share"
+              ></i><span class="btn-text"> Visit</span></a>
+            <button class="btn btn-outline-dark col-5 share"><i
+                class="fas fa-share-alt"
+              ></i><span class="btn-text"> Share</span></button>
+            <button class="btn btn-outline-dark col-3 copy"><i
+                class="fas fa-copy"
+              ></i>
+              <span class="btn-text"> Copy</span></button>
+          </div>
+          <a href="/" class="btn btn-outline-primary btn-lg btn-block">Shrink
+            Another</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row ss-media hidden">
+  <div class="popup offset-md-3 offset-sm-3 col-md-6 col-sm-6">
+    <h3 class="text-share">Share with Social Media..</h3>
+    <div class="card c-1">
+      <a class="whatsapp-btn">
+        <i class="fab fa-whatsapp col-2"></i>
+      </a>
+      {{! <a class="instagram-btn">
+        <i class="fab fa-instagram col-2"></i>
+      </a> }}
+      <a class="facebook-btn">
+        <i class="fab fa-facebook-f col-2"></i>
+      </a>
+      <a class="twitter-btn">
+        <i class="fab fa-twitter col-2"></i>
+      </a>
+    </div>
+    <div class="card c-2">
+      <a class="telegram-btn">
+        <i class="fab fa-telegram col-2"></i>
+      </a>
+      {{! <a class="sms-btn">
+        <i class="fas fa-sms col-2"></i>
+      </a> }}
+      <a class="linkedin-btn">
+        <i class="fab fa-linkedin-in col-2"></i>
+      </a>
+      <a class="mail-btn">
+        <i class="fas fa-envelope col-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>

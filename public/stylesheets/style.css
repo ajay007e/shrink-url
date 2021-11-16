@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap");
+
+a {
+  color: black;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  overflow-x: hidden;
+  position: relative;
+}
+form {
+  margin-bottom: 0;
+}
+footer {
+  /* color: #3f2b96; */
+  color: white;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 228, 196, 0.336);
+  padding: 10px 0;
+  position: relative;
+  bottom: 10px;
+}
+input:not([type="submit"]),
+select {
+  height: 3rem;
+  border: solid 2px rgb(139, 139, 139);
+  border-radius: 5px;
+  padding-left: 15px;
+  color: rgb(139, 139, 139);
+}
+input:not([type="submit"]):focus,
+select :focus {
+  color: black;
+  border: solid black;
+}
+option {
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.alias {
+  margin-left: 0;
+}
+.alias.error {
+  border: solid 2px rgb(182, 39, 39);
+}
+.brand {
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+.domain {
+  margin-right: 0;
+}
+.error-message {
+  font-size: 14px;
+  color: rgb(182, 39, 39);
+}
+
+.fa-facebook-f:hover {
+  color: #4267b2;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-instagram:hover {
+  color: #e1306c;
+}
+.fa-linkedin-in:hover {
+  color: #00a0dc;
+}
+.fa-whatsapp:hover {
+  color: #25d366;
+}
+.fa-sms:hover {
+  color: #caccd1;
+}
+.fa-telegram:hover {
+  color: #0088cc;
+}
+.fa-envelope:hover {
+  color: #ea4335;
+}
+.hidden {
+  display: none;
+}
+.popup {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: 2;
+}
+.c-1 {
+  border-radius: 10px 10px 0px 0px !important;
+  border: solid 0px;
+}
+.c-2 {
+  border-radius: 0px 0px 10px 10px !important;
+  border: solid 0px;
+}
+.popup .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0.5rem;
+}
+.popup .card i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.options {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1;
+}
+.text-400 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.text-200 {
+  font-weight: 200;
+  font-style: italic;
+}
+.text-share {
+  margin-bottom: 2rem;
+  color: white;
+  font-weight: 800;
+}
+.title {
+  color: rgb(235, 230, 230);
+}
+
+.btn-lg {
+  width: 100%;
+}
+.card {
+  border-radius: 10px;
+}
+.container {
+  min-height: 65vh;
+  /* transition: opacity 2.5s ease; */
+}
+.container.blur {
+  opacity: 0.1;
+}
+.col-md-4 {
+  margin: 4% 0;
+}
+.row {
+  margin-top: 10%;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-bottom: 3rem;
+  }
+  .title {
+    text-align: center;
+  }
+  .feature {
+    display: none;
+  }
+  .btn-text {
+    display: none;
+  }
+  .options a,
+  .options button {
+    padding: 0.7rem 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .popup {
+    /* display: none; */
+    top: 35%;
+  }
+}
