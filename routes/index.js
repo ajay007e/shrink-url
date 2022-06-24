@@ -16,7 +16,7 @@ router.get("/:alias", (req, res, next) => {
     if (response.status) {
       res.redirect(response.longUrl);
     } else {
-      res.render("error", { title: "Opps..!" });
+      res.render("error", { title: "Oops..!" });
     }
   });
 });
